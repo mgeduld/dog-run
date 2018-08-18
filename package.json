@@ -1,0 +1,71 @@
+{
+  "name": "dog-run",
+  "version": "1.0.0",
+  "description": "For VestWell",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava-ts \"src/**/*.test.*\"",
+    "build": "rm -rf dist && mkdir dist && cp src/data.json dist/data.json && parcel src/index.html --out-dir dist/ --target browser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgeduld/dog-run.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgeduld/dog-run/issues"
+  },
+  "homepage": "https://github.com/mgeduld/dog-run#readme",
+  "ava": {
+    "files": [
+      "!/tests"
+    ]
+  },
+  "nyc": {
+    "extension": [
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.test.ts",
+      "**/*/test/*"
+    ]
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.116",
+    "lodash": "^4.17.10",
+    "parcel-bundler": "^1.9.7",
+    "react": "^16.4.2",
+    "react-data-grid": "^4.0.7",
+    "react-data-grid-addons": "^4.0.8",
+    "react-dom": "^16.4.2",
+    "react-lifecycle-component": "^3.0.0",
+    "react-redux": "^5.0.7",
+    "recompose": "^0.28.2",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.13",
+    "@types/fetch-mock": "^6.0.3",
+    "@types/node": "^10.7.1",
+    "@types/react": "^16.4.11",
+    "@types/react-data-grid": "^2.0.13",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-redux": "^6.0.6",
+    "@types/recompose": "^0.26.4",
+    "@types/redux": "^3.6.0",
+    "@types/redux-saga": "^0.10.5",
+    "ava": "^0.25.0",
+    "ava-ts": "^0.25.1",
+    "enzyme": "^3.4.4",
+    "fetch-mock": "^6.5.2",
+    "nyc": "^12.0.2",
+    "redux-saga-test-plan": "^3.7.0",
+    "redux-saga-testing": "^1.0.5",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  }
+}

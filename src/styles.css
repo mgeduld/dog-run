@@ -1,0 +1,16 @@
+.dark .react-grid-Cell,
+.dark .react-grid-HeaderCell {
+  background: rgb(4, 31, 63) !important;
+}
+.dark .react-grid-Main {
+  color: rgb(252, 250, 175);
+}
+.controls {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 10px;
+}
+.toggle {
+  margin-top: 10px;
+  height: 25px;
+}
